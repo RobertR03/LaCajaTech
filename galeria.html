@@ -1,0 +1,49 @@
+<!DOCTYPE html> <!--html 5-->
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="script.js"></script>
+        <title>La Caja Tecnológica</title>
+        <meta charset="utf-8"> <!--Tarea-->
+    </head>
+    <body>
+        <header id="titulo">
+            <div class="logo"><span class="logo_texto">La caja tecnológica</span></div> <!--span para invocar css-->
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" class="estilo_texto">Inicio</a></li>
+                    <li><a href="tienda.html" class="estilo_texto">Tienda</a></li>
+                    <li><a href="blog.html" class="estilo_texto">Blog</a></li>
+                    <li><a href="galeria.html" class="estilo_texto link-activo">Galría</a></li>
+                    <li><a href="recomendados.html" class="estilo_texto">Recomendados</a></li>
+                </ul>
+            </nav>
+            <div class="login">
+                <form class="formulario">
+                    <input class="form-control" type="text" name="user" placeholder="Usuario">
+                    <input class="form-control" type="password" name="pass" placeholder="Contraseña">
+                    <input class="form-button" type="submit" value="Acceder">
+                </form>
+            </div>
+        </header>
+        <!--bajo el encabezado-->
+        <div id="contenedor">
+            <!--Presentación-->
+            <div class="carrusel" id="carrusel">
+                <div class="carrusel_form">
+                    <input type="button" value="<<" onclick="btnAnterior()" id="btnAnterior">
+                    <img src="imagenes/galeria_1.jpg" class="carrusel_img" id="galeria_img">
+                    <input type="button" value=">>" onclick="btnSiguiente()" id="btnSiguiente">
+                </div>
+                <div class="descripcion">
+                    En esta página podrá hallar un sinfín de artículos y servicios tecnológicos 
+                    puestos a prueba. Teniendo en cuenta cada una de sus características y precio, 
+                    determinamos su valor económico y lo comparamos con su precio de venta.
+                </div>
+            </div>
+            <br>
+            <!--Nombre abajo-->
+            <marquee id="contenedor_mini">Alumno:Robert Romero</marquee>    
+        </div>
+    </body>
+</html>
